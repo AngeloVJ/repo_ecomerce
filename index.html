@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <title>Ecomerce</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header__navbar">
+
+        <nav class="navbar">
+            <div class="content__logo">
+                <div class="logo">
+                    <img src="./assets/img/favicon.png" alt="logo">
+                </div>
+                <span>STORE</span>
+            </div>
+
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <i class='bx bx-x'></i>
+            </ul>
+
+            <div class="navbar__icons">
+                <i class="bx bx-sun"></i>
+                <i class="bx bx-moon"></i>
+                <i class="bx bx-shopping-bag"><span class="amountCart"></span></i>
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container maxContent">
+
+        <section class="home" id="home">
+            <div class="home__img">
+                <img src="./assets/img/featured2.png" alt="img1">
+            </div>
+
+            <div class="home__info">
+                <h2>New Sweatshirt<br>
+                    COLLECTIONS 2022</h2>
+
+                <p>Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a
+                    modern design.</p>
+
+                <p class="home__info-price">$14.00</p>
+
+                <div class="home__info-buttons">
+                    <button class="btn">Discover</button>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="ecomerce" id="product">
+
+            <div class="ecomerce__filters">
+                <div class="filter" data-filter="all">
+                    <h4>Mostrar todo</h4>
+                    <p>Show all products</p>
+                </div>
+                <div class="filter" data-filter=".red">
+                    <h4>Hoddies</h4>
+                    <p>3 products</p>
+                </div>
+                <div class="filter" data-filter=".black">
+                    <h4>Shirts</h4>
+                    <p>4 products</p>
+                </div>
+                <div class="filter" data-filter=".white">
+                    <h4>Sweatshirt</h4>
+                    <p>4 products</p>
+                </div>
+            </div>
+
+            <div class="ecomerce__products">
+                
+                <!-- <div class="product red">
+                    <div class="product__img">
+                        <img src="./assets/img/featured1.png" alt="shirt1">
+                    </div>
+                    <div class="product__info">
+                        <div class="add__cart">
+                            <span>+</span>
+                        </div>
+                        <p>14.00 <span>| Stock: 10</span></p>
+                        <p>Hoddies</p>
+                    </div>
+                </div>
+
+                <div class="product black">
+                    <div class="product__img">
+                        <img src="./assets/img/featured2.png" alt="shirt1">
+                    </div>
+                    <div class="product__info">
+                        <div class="add__cart">
+                            <span>+</span>
+                        </div>
+                        <p>24.00 <span>| Stock: 12</span></p>
+                        <p>Shrits</p>
+                    </div>
+                </div>
+                <div class="product white">
+                    <div class="product__img">
+                        <img src="./assets/img/featured3.png" alt="shirt1">
+                    </div>
+                    <div class="product__info">
+                        <div class="add__cart">
+                            <span>+</span>
+                        </div>
+                        <p>24.00 <span>| Stock: 20</span></p>
+                        <p>Sweatshirts</p>
+                    </div>
+                </div> -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="contentCar">
+        <div class="carProducts"></div>
+        <div class="carTotal"></div>
+    </div>
+
+    <footer>
+        <div class="footer__links maxContent">
+
+            <div class="footer__link">
+                <h3>Out Information</h3>
+                <ul>
+                    <li><a href="#">Toluca - Mexico</a></li>
+                </ul>
+            </div>
+            <div class="footer__link">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Copy Right</a></li>
+                </ul>
+            </div>
+            <div class="footer__link">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#">Hoodies</a></li>
+                    <li><a href="#">Shirt</a></li>
+                    <li><a href="#">Sweatshirts</a></li>
+                </ul>
+            </div>
+            <div class="footer__link">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <p><small>© ACADEMLO. All rigths reserved</small></p>
+        
+        <br>
+        <p>Codigo aquí: 
+            <a target="_blank" href="https://github.com/AngeloVJ/repo_ecomerce"><i class='bx bxl-github'></i></a></p>
+    </footer>
+
+    <script src="./assets/js/mixitup.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
