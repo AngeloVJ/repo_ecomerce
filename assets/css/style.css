@@ -66,10 +66,12 @@ button {
     border-radius: 0;
     border: none;
     display: inline-block;
+    cursor: pointer;
 }
 
 .btn__buy {
     background-color: var(--button-color-alt);
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -386,6 +388,7 @@ button {
     flex-direction: column;
     gap: 1rem;
 }
+
 
 /*FOOTER*/
 

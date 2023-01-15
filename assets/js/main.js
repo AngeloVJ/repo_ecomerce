@@ -1,11 +1,4 @@
-mixitup(".ecomerce__products", {
-    selectors: {
-        target: '.product'
-    },
-    animation: {
-        duration: 300
-    }
-});
+
 
 {
 const dark = document.querySelector(".bx-moon");
@@ -114,9 +107,14 @@ function printAmountCart() {
 function printTotalCart() {
     const arrayCart = Object.values(objCart);
     if (!arrayCart.length) {
-        carTotal.innerHTML = `
-            <h3>Carrito vacio</h3>
+        cartProducts.innerHTML = `
+            <div class="empty">
+                <img src="./assets/img/empty-cart.png" alt="empty cart">
+                <h2>Your cart is empty</h2>
+                <p>You can add items to your cart by clicking on the + button on the product page.</p>
+            </div>
         `;
+        carTotal.innerHTML= ``;
         return;
     }
 
@@ -280,3 +278,12 @@ carTotal.addEventListener("click", function (e) {
 printProducts();
 printTotalCart();
 printAmountCart();
+
+mixitup(".ecomerce__products", {
+    selectors: {
+        target: '.product'
+    },
+    animation: {
+        duration: 300
+    }
+});
